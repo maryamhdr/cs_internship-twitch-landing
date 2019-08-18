@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>Online Tour</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="title-container">
+            Time to<br><span class="underlined">Ad</span>venture!<br>
+            <button class="btn" onclick="openForm()">Reserve new!</button>
+        </div>
+        <div class="form-container">
+            <h2>Make your reservation here:</h2>
+            <form class="register-form" action="" method="POST">
+                <div class="input-container">
+                    <i class="fas fa-user fa-fw"></i>
+                    <input class="input-field" type="text" placeholder="Full Name" autocomplete="off" required/>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-envelope fa-fw"></i>
+                    <input class="input-field" type="email" placeholder="Email" autocomplete="off" required/>
+                </div>
+                <button class="submit" type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="modal" id="formModal">
+            <div class="form-container-modal">
+                <h2>Make your reservation here:</h2>
+                <span class="close" onclick="closeForm()">&times;</span>
+                <form class="register-form" action="" method="POST">
+                    <div class="input-container">
+                        <i class="fas fa-user fa-fw"></i>
+                        <input class="input-field" type="text" placeholder="Full Name" autocomplete="off" required/>
+                    </div>
+                    <div class="input-container">
+                        <i class="fas fa-envelope fa-fw"></i>
+                        <input class="input-field" type="email" placeholder="Email" autocomplete="off" required/>
+                    </div>
+                    <button class="submit" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
